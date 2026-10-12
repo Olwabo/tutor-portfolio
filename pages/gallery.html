@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery / Evidence | Olwabo Salelo</title>
+  <meta name="description" content="Gallery / Evidence — a curated collection of artefacts documenting Olwabo Salelo's tutoring practice." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="pages.css" />
+</head>
+<body>
+  <div class="bg-orbs" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+    <span class="grid-overlay"></span>
+  </div>
+
+  <header class="navbar">
+    <a href="../index.html" class="brand" aria-label="Home">
+      <span class="brand-dot"></span>
+      <span>Olwabo<span class="accent">Salelo</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#roles">Roles</a>
+      <a href="../index.html#portfolio">Portfolio</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+       <a href="../assets/cv/Olwabo_Salelo_CV.pdf" class="btn btn-primary btn-sm" download>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          <span class="btn-label">Download CV</span>
+        </a>
+    </div>
+  </header>
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../index.html">
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 12l9-9 9 9"/>
+        <path d="M5 10v10h14V10"/>
+      </svg>
+      Home
+    </a>
+    <span class="crumb-sep">/</span>
+    <a href="tutorial-delivery.html">Tutorial Delivery</a>
+    <span class="crumb-sep">/</span>
+    <span class="crumb-current">Gallery / Evidence</span>
+  </nav>
+
+  <section class="page-hero">
+    <span class="pill">
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="3" width="18" height="18" rx="2"/>
+        <circle cx="8.5" cy="8.5" r="1.5"/>
+        <polyline points="21 15 16 10 5 21"/>
+      </svg>
+      Portfolio Section
+    </span>
+
+    <h1>Gallery / <span class="gradient-text">Evidence</span></h1>
+
+    <p class="page-lead">
+      A curated collection of artefacts documenting my tutoring practice, session
+      plans, attendance registers, digital activity logs, assessment papers I authored,
+      and Technical Programming 2 learning materials.
+    </p>
+
+    <div class="page-meta">
+      <span>
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="18" height="18" rx="2"/>
+          <circle cx="8.5" cy="8.5" r="1.5"/>
+          <polyline points="21 15 16 10 5 21"/>
+        </svg>
+        <span id="galleryCount">14</span> artefacts
+      </span>
+      <span>
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M15 3h6v6"/>
+          <path d="M9 21H3v-6"/>
+          <path d="M21 3l-7 7"/>
+          <path d="M3 21l7-7"/>
+        </svg>
+        Click any image to enlarge
+      </span>
+    </div>
+  </section>
+
+  <main class="gallery-page">
+    <!-- Filter chips -->
+    <div class="gallery-filters" role="tablist" aria-label="Filter evidence">
+      <button class="filter-chip is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+      <button class="filter-chip" data-filter="planning" role="tab" aria-selected="false">Planning</button>
+      <button class="filter-chip" data-filter="attendance" role="tab" aria-selected="false">Attendance</button>
+      <button class="filter-chip" data-filter="digital" role="tab" aria-selected="false">Digital Activity</button>
+      <button class="filter-chip" data-filter="assessments" role="tab" aria-selected="false">Assessments</button>
+      <button class="filter-chip" data-filter="tech-prog" role="tab" aria-selected="false">Technical Programming</button>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+
+      <button
+        class="gallery-item"
+        data-category="planning"
+        data-lightbox-src="../assets/images/evidence/session-plan.jpeg"
+        data-lightbox-caption="Session Plan — Information Systems III"
+        data-lightbox-description="Structured tutorial plan outlining the topic, learning objectives and planned activities."
+        type="button"
+      >
+        <div class="gallery-thumb">
+          <img src="../assets/images/evidence/session-plan.jpeg" alt="Tutorial session plan for Information Systems III" loading="lazy" />
+          <span class="gallery-zoom">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              <line x1="11" y1="8" x2="11" y2="14"/>
+              <line x1="8" y1="11" x2="14" y2="11"/>
+            </svg>
+          </span>
+          <span class="gallery-hint">Click to enlarge</span>
+        </div>
+        <div class="gallery-caption">
+          <span class="gallery-tag">Planning</span>
+          <strong>Session Plan</strong>
+          <span>Preparation before delivery</span>
+        </div>
+      </button>
+
+      <button
+        class="gallery-item"
+        data-category="attendance"
+        data-lightbox-src="../assets/images/evidence/filled-register.jpeg"
+        data-lightbox-caption="Tutorial Attendance Register — Page 1"
+        data-lightbox-description="30 July 2026 · INS3 · Venue C2F1 — 13 students signed in with student numbers and cell numbers."
+        type="button"
+      >
+        <div class="gallery-thumb">
+          <img src="../assets/images/evidence/filled-register.jpeg" alt="Tutorial attendance register page 1" loading="lazy" />
+          <span class="gallery-zoom">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              <line x1="11" y1="8" x2="11" y2="14"/>
+              <line x1="8" y1="11" x2="14" y2="11"/>
+            </svg>
+          </span>
+          <span class="gallery-hint">Click to enlarge</span>
+        </div>
+        <div class="gallery-caption">
+          <span class="gallery-tag">Attendance</span>
+          <strong>Attendance Register · Page 1</strong>
+          <span>30 July 2026 · 13 students</span>
+        </div>
+      </button>
+
+      <button
+        class="gallery-item"
+        data-category="attendance"
+        data-lightbox-src="../assets/images/evidence/lecturer-signiture.jpeg"
+        data-lightbox-caption="Tutorial Attendance Register — Page 2"
+        data-lightbox-description="Lecturer signature and date confirming the tutorial session was verified on 30 July 2026."
+        type="button"
+      >
+        <div class="gallery-thumb">
+          <img src="../assets/images/evidence/lecturer-signiture.jpeg" alt="Tutorial attendance register page 2 with lecturer signature" loading="lazy" />
+          <span class="gallery-zoom">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              <line x1="11" y1="8" x2="11" y2="14"/>
+              <line x1="8" y1="11" x2="14" y2="11"/>
+            </svg>
+          </span>
+          <span class="gallery-hint">Click to enlarge</span>
+        </div>
+        <div class="gallery-caption">
+          <span class="gallery-tag">Attendance</span>
+          <strong>Attendance Register · Page 2</strong>
+          <span>Lecturer signature &amp; date</span>
+        </div>
+      </button>
+
+      <button
+        class="gallery-item"
+        data-category="digital"
+        data-lightbox-src="../assets/images/evidence/online_register.png"
+        data-lightbox-caption="Microsoft Teams Session Log — 06 August 2026"
+        data-lightbox-description="Export of the Microsoft Teams session log showing student names with join and leave timestamps from an online quiz activity."
+        type="button"
+      >
+        <div class="gallery-thumb">
+          <img src="../assets/images/evidence/online_register.png" alt="Microsoft Teams session log with join and leave timestamps" loading="lazy" />
+          <span class="gallery-zoom">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              <line x1="11" y1="8" x2="11" y2="14"/>
+              <line x1="8" y1="11" x2="14" y2="11"/>
+            </svg>
+          </span>
+          <span class="gallery-hint">Click to enlarge</span>
+        </div>
+        <div class="gallery-caption">
+          <span class="gallery-tag">Digital Activity</span>
+          <strong>Microsoft Teams Session Log</strong>
+          <span>06 August 2026</span>
+        </div>
+      </button>
+
+      <button
+        class="gallery-item"
+        data-category="assessments"
+        data-lightbox-src="../assets/images/evidence/sql-test-cover.png"
+        data-lightbox-caption="Information Systems III — SQL Assessment"
+        data-lightbox-description="Authored SQL assessment paper covering aggregation, joins, updates and deletions across Sales, Employee, Departments, Employees and Orders tables. Verified by Dr Ngesimani and printed for students."
+        data-doc="../assets/docs/assessments/sql-test.pdf"
+        type="button"
+      >
+        <div class="gallery-thumb">
+          <img src="../assets/images/evidence/sql-test-cover.png" alt="SQL assessment paper cover" loading="lazy" />
+          <span class="gallery-zoom">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              <line x1="11" y1="8" x2="11" y2="14"/>
+              <line x1="8" y1="11" x2="14" y2="11"/>
+            </svg>
+          </span>
+          <span class="gallery-hint">Click to enlarge</span>
+        </div>
+        <div class="gallery-caption">
+          <span class="gallery-tag">Assessments</span>
+          <strong>SQL Assessment</strong>
+          <span>Authored · verified · printed</span>
+          <a class="gallery-doc-link" href="../assets/docs/assessments/sql-test.pdf" target="_blank" rel="noopener" onclick="event.stopPropagation();">
+            Open full PDF
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+          </a>
+        </div>
+      </button>
+
+      <button
+        class="gallery-item"
+        data-category="assessments"
+        data-lightbox-src="../assets/images/evidence/specialization-test.png"
+        data-lightbox-caption="Information Systems III — Specialization Assessment"
+        data-lightbox-description="Scenario-based assessment asking students to model specialisation hierarchies for hospitals, car rentals, banking, construction and retail contexts. Verified by Dr Ngesimani."
+        data-doc="../assets/docs/assessments/specialization-test.pdf"
+        type="button"
+      >
+        <div class="gallery-thumb">
+          <img src="../assets/images/evidence/specialization-test.png" alt="Specialization assessment paper" loading="lazy" />
+          <span class="gallery-zoom">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              <line x1="11" y1="8" x2="11" y2="14"/>
+              <line x1="8" y1="11" x2="14" y2="11"/>
+            </svg>
+          </span>
+          <span class="gallery-hint">Click to enlarge</span>
+        </div>
+        <div class="gallery-caption">
+          <span class="gallery-tag">Assessments</span>
+          <strong>Specialization Assessment</strong>
+          <span>EER modelling scenarios</span>
+          <a class="gallery-doc-link" href="../assets/docs/assessments/specialization-test.pdf" target="_blank" rel="noopener" onclick="event.stopPropagation();">
+            Open full PDF
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+          </a>
+        </div>
+      </button>
+
+      <button
+        class="gallery-item"
+        data-category="assessments"
+        data-lightbox-src="../assets/images/evidence/chapter10-test.png"
+        data-lightbox-caption="Chapter 10 — Transaction Management &amp; Concurrency Control"
+        data-lightbox-description="Multiple-choice, true/false and short-answer assessment covering transaction states, locking, serializability, checkpointing and recovery. Authored as revision material for Information Systems III students."
+        data-doc="../assets/docs/assessments/chapter-10-test.pdf"
+        type="button"
+      >
+        <div class="gallery-thumb">
+          <img src="../assets/images/evidence/chapter10-test.png" alt="Chapter 10 test paper" loading="lazy" />
+          <span class="gallery-zoom">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              <line x1="11" y1="8" x2="11" y2="14"/>
+              <line x1="8" y1="11" x2="14" y2="11"/>
+            </svg>
+          </span>
+          <span class="gallery-hint">Click to enlarge</span>
+        </div>
+        <div class="gallery-caption">
+          <span class="gallery-tag">Assessments</span>
+          <strong>Chapter 10 Test</strong>
+          <span>Transaction Management</span>
+          <a class="gallery-doc-link" href="../assets/docs/assessments/chapter-10-test.pdf" target="_blank" rel="noopener" onclick="event.stopPropagation();">
+            Open full PDF
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+          </a>
+        </div>
+      </button>
+
+      <button
+        class="gallery-item"
+        data-category="assessments"
+        data-lightbox-src="../assets/images/evidence/chapter12-test.png"
+        data-lightbox-caption="Chapter 12 — Distributed Database Management Systems"
+        data-lightbox-description="Assessment covering DDBMS advantages and disadvantages, fragmentation, replication, distribution transparency and the two-phase commit protocol."
+        data-doc="../assets/docs/assessments/chapter-12-test.pdf"
+        type="button"
+      >
+        <div class="gallery-thumb">
+          <img src="../assets/images/evidence/chapter12-test.png" alt="Chapter 12 test paper" loading="lazy" />
+          <span class="gallery-zoom">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              <line x1="11" y1="8" x2="11" y2="14"/>
+              <line x1="8" y1="11" x2="14" y2="11"/>
+            </svg>
+          </span>
+          <span class="gallery-hint">Click to enlarge</span>
+        </div>
+        <div class="gallery-caption">
+          <span class="gallery-tag">Assessments</span>
+          <strong>Chapter 12 Test</strong>
+          <span>Distributed DBMS</span>
+          <a class="gallery-doc-link" href="../assets/docs/assessments/chapter-12-test.pdf" target="_blank" rel="noopener" onclick="event.stopPropagation();">
+            Open full PDF
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+          </a>
+        </div>
+      </button>
+
+      <button
+        class="gallery-item"
+        data-category="assessments"
+        data-lightbox-src="../assets/images/evidence/chapter13-test.png"
+        data-lightbox-caption="Chapter 13 — Business Intelligence &amp; Data Warehousing"
+        data-lightbox-description="Assessment covering BI architecture, operational vs decision support data, data warehouses, data marts, star schemas and OLAP."
+        data-doc="../assets/docs/assessments/chapter-13-test.pdf"
+        type="button"
+      >
+        <div class="gallery-thumb">
+          <img src="../assets/images/evidence/chapter13-test.png" alt="Chapter 13 test paper" loading="lazy" />
+          <span class="gallery-zoom">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              <line x1="11" y1="8" x2="11" y2="14"/>
+              <line x1="8" y1="11" x2="14" y2="11"/>
+            </svg>
+          </span>
+          <span class="gallery-hint">Click to enlarge</span>
+        </div>
+        <div class="gallery-caption">
+          <span class="gallery-tag">Assessments</span>
+          <strong>Chapter 13 Test</strong>
+          <span>Business Intelligence</span>
+          <a class="gallery-doc-link" href="../assets/docs/assessments/chapter-13-test.pdf" target="_blank" rel="noopener" onclick="event.stopPropagation();">
+            Open full PDF
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+          </a>
+        </div>
+      </button>
+
+      <button
+        class="gallery-item"
+        data-category="tech-prog"
+        data-lightbox-src="../assets/images/evidence/arrays-pptx-cover.png"
+        data-lightbox-caption="Introduction to Arrays — Tutorial with Mr O Salelo"
+        data-lightbox-description="Tutorial presentation covering what an array is, why we use them, and how they solve the problem of storing many values of the same type."
+        data-doc="../assets/docs/tech-programming/introduction-to-arrays.pptx"
+        type="button"
+      >
+        <div class="gallery-thumb">
+          <img src="../assets/images/evidence/arrays-pptx-cover.png" alt="Introduction to Arrays PowerPoint cover slide" loading="lazy" />
+          <span class="gallery-zoom">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              <line x1="11" y1="8" x2="11" y2="14"/>
+              <line x1="8" y1="11" x2="14" y2="11"/>
+            </svg>
+          </span>
+          <span class="gallery-hint">Click to enlarge</span>
+        </div>
+        <div class="gallery-caption">
+          <span class="gallery-tag">Technical Programming</span>
+          <strong>Introduction to Arrays</strong>
+          <span>Presentation · 38 slides</span>
+          <a class="gallery-doc-link" href="../assets/docs/tech-programming/introduction-to-arrays.pptx" target="_blank" rel="noopener" onclick="event.stopPropagation();">
+            Open presentation
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+          </a>
+        </div>
+      </button>
+
+      <button
+        class="gallery-item"
+        data-category="tech-prog"
+        data-lightbox-src="../assets/images/evidence/trace-working-doc.png"
+        data-lightbox-caption="Working Document — Finding the Minimum &amp; Tracing Binary Search"
+        data-lightbox-description="Handworked traces shown to students. First, a step-by-step walk-through of finding the minimum value in an array. Then, a full binary-search trace (low, mid, high at each step) worked out before writing any code, so students understand the algorithm itself."
+        data-doc="../assets/docs/tech-programming/working-document.docx"
+        type="button"
+      >
+        <div class="gallery-thumb">
+          <img src="../assets/images/evidence/trace-working-doc.png" alt="Working document showing minimum-finding and binary-search trace" loading="lazy" />
+          <span class="gallery-zoom">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              <line x1="11" y1="8" x2="11" y2="14"/>
+              <line x1="8" y1="11" x2="14" y2="11"/>
+            </svg>
+          </span>
+          <span class="gallery-hint">Click to enlarge</span>
+        </div>
+        <div class="gallery-caption">
+          <span class="gallery-tag">Technical Programming</span>
+          <strong>Trace: Minimum &amp; Binary Search</strong>
+          <span>Algorithm walk-through before coding</span>
+          <a class="gallery-doc-link" href="../assets/docs/tech-programming/working-document.docx" target="_blank" rel="noopener" onclick="event.stopPropagation();">
+            Open document
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+          </a>
+        </div>
+      </button>
+
+      <button
+        class="gallery-item"
+        data-category="tech-prog"
+        data-lightbox-src="../assets/images/evidence/ds-two-class.png"
+        data-lightbox-caption="Data Structures — Two-Class Implementation"
+        data-lightbox-description="Demonstration of how to organise data structure code across two classes. MyArray provides methods such as printArray, searchArray, reverseArray, minimum, maximum, sumArray and averageArray. The Main class instantiates MyArray and calls each method, showing how separation of concerns works in practice."
+        data-doc="../assets/docs/tech-programming/data-structures-two-classes.txt"
+        type="button"
+      >
+        <div class="gallery-thumb">
+          <img src="../assets/images/evidence/ds-two-class.png" alt="Java source showing a MyArray class with helper methods called from a Main class" loading="lazy" />
+          <span class="gallery-zoom">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              <line x1="11" y1="8" x2="11" y2="14"/>
+              <line x1="8" y1="11" x2="14" y2="11"/>
+            </svg>
+          </span>
+          <span class="gallery-hint">Click to enlarge</span>
+        </div>
+        <div class="gallery-caption">
+          <span class="gallery-tag">Technical Programming</span>
+          <strong>Data Structures - Two Classes</strong>
+          <span>MyArray + Main · separation of concerns</span>
+          <a class="gallery-doc-link" href="../assets/docs/tech-programming/data-structures-two-classes.txt" target="_blank" rel="noopener" onclick="event.stopPropagation();">
+            Open source code
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+          </a>
+        </div>
+      </button>
+
+      <button
+        class="gallery-item"
+        data-category="tech-prog"
+        data-lightbox-src="../assets/images/evidence/bubble-sort-code.png"
+        data-lightbox-caption="Bubble Sort — Two-Class Implementation"
+        data-lightbox-description="Progression from the earlier Data Structures example: BubbleClass encapsulates the bubbleSort and printArray methods, while the Main class instantiates it and prints the array before and after sorting. Demonstrates the same two-class pattern applied to a new algorithm."
+        data-doc="../assets/docs/tech-programming/bubble-sort-two-classes.txt"
+        type="button"
+      >
+        <div class="gallery-thumb">
+          <img src="../assets/images/evidence/bubble-sort-code.png" alt="Java source showing a BubbleClass with bubbleSort and printArray called from a Main class" loading="lazy" />
+          <span class="gallery-zoom">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              <line x1="11" y1="8" x2="11" y2="14"/>
+              <line x1="8" y1="11" x2="14" y2="11"/>
+            </svg>
+          </span>
+          <span class="gallery-hint">Click to enlarge</span>
+        </div>
+        <div class="gallery-caption">
+          <span class="gallery-tag">Technical Programming</span>
+          <strong>Bubble Sort - Two Classes</strong>
+          <span>BubbleClass + Main · applied pattern</span>
+          <a class="gallery-doc-link" href="../assets/docs/tech-programming/bubble-sort-two-classes.txt" target="_blank" rel="noopener" onclick="event.stopPropagation();">
+            Open source code
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+          </a>
+        </div>
+      </button>
+
+      <button
+        class="gallery-item"
+        data-category="tech-prog"
+        data-lightbox-src="../assets/images/evidence/sept-worksheet.png"
+        data-lightbox-caption="04 September — Data Structures Worksheet"
+        data-lightbox-description="In-class questions completed with students to check whether they had followed how the data structure works in practice. Used as a formative check before moving to implementation."
+        data-doc="../assets/docs/tech-programming/04-september-worksheet.docx"
+        type="button"
+      >
+        <div class="gallery-thumb">
+          <img src="../assets/images/evidence/sept-worksheet.png" alt="Worksheet used with students on 04 September" loading="lazy" />
+          <span class="gallery-zoom">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              <line x1="11" y1="8" x2="11" y2="14"/>
+              <line x1="8" y1="11" x2="14" y2="11"/>
+            </svg>
+          </span>
+          <span class="gallery-hint">Click to enlarge</span>
+        </div>
+        <div class="gallery-caption">
+          <span class="gallery-tag">Technical Programming</span>
+          <strong>04 September Worksheet</strong>
+          <span>Data structures - formative check</span>
+          <a class="gallery-doc-link" href="../assets/docs/tech-programming/04-september-worksheet.docx" target="_blank" rel="noopener" onclick="event.stopPropagation();">
+            Open worksheet
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+          </a>
+        </div>
+      </button>
+
+    </div>
+
+    <p class="gallery-empty" hidden>No artefacts match this filter.</p>
+
+    <!-- Info note -->
+    <div class="info-note gallery-note">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"/>
+        <line x1="12" y1="16" x2="12" y2="12"/>
+        <line x1="12" y1="8" x2="12.01" y2="8"/>
+      </svg>
+      <p>
+        <strong>Information Systems III assessments</strong> were authored by me,
+        verified by my Module Lecturer <strong>Dr Ngesimani</strong>, and printed for
+        students. <strong>Technical Programming 2 material</strong> presentation
+        slides, algorithm traces, two-class implementations and worksheets was
+        developed and delivered during my volunteer support sessions. A narrative
+        walkthrough lives in <a href="tutorial-delivery.html#slideshow">Tutorial Delivery</a>.
+      </p>
+    </div>
+
+    <nav class="page-nav" aria-label="Portfolio navigation">
+      <a href="tutorial-delivery.html" class="page-nav-link page-nav-prev">
+        <span class="page-nav-dir">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"/>
+            <polyline points="12 19 5 12 12 5"/>
+          </svg>
+          Previous
+        </span>
+        <strong>Tutorial Delivery</strong>
+      </a>
+      <a href="feedback.html" class="page-nav-link page-nav-next">
+        <span class="page-nav-dir">
+          Next
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"/>
+            <polyline points="12 5 19 12 12 19"/>
+          </svg>
+        </span>
+        <strong>Student Feedback</strong>
+      </a>
+    </nav>
+  </main>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+    <div class="lightbox-backdrop" data-lightbox-close></div>
+
+    <div class="lightbox-content">
+      <header class="lightbox-bar">
+        <div class="lightbox-meta">
+          <span class="lightbox-caption" id="lightboxCaption">—</span>
+          <span class="lightbox-desc" id="lightboxDesc"></span>
+        </div>
+
+        <div class="lightbox-actions">
+          <span class="lightbox-counter" aria-live="polite">
+            <span id="lightboxCurrent">1</span> / <span id="lightboxTotal">1</span>
+          </span>
+
+          <button class="icon-btn lightbox-zoom" id="lightboxZoom" type="button" aria-label="Toggle zoom">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              <line x1="11" y1="8" x2="11" y2="14"/>
+              <line x1="8" y1="11" x2="14" y2="11"/>
+            </svg>
+          </button>
+
+          <button class="icon-btn lightbox-close" data-lightbox-close type="button" aria-label="Close">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"/>
+              <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <div class="lightbox-stage" id="lightboxStage">
+        <button class="slide-btn lightbox-prev" id="lightboxPrev" type="button" aria-label="Previous image">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"/>
+          </svg>
+        </button>
+
+        <img class="lightbox-image" id="lightboxImage" src="" alt="" />
+
+        <button class="slide-btn lightbox-next" id="lightboxNext" type="button" aria-label="Next image">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer id="contact" class="footer">
+    <div class="footer-inner">
+      <div>
+        <h3>Let's connect</h3>
+        <p>Open to feedback, collaboration and tutoring opportunities.</p>
+      </div>
+      <div class="footer-links">
+       <a href="saleloolwabo99@gmail.com">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16v16H4z"/>
+            <polyline points="4 6 12 13 20 6"/>
+          </svg>
+          Email
+        </a>
+        <a href="www.linkedin.com/in/olwabo-salelo-0a4a72297" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
+            <rect x="2" y="9" width="4" height="12"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/Olwabo?tab=repositories" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+          </svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+    <p class="copyright">
+           &copy; <span id="year"></span> Olwabo Salelo · Tutor E-Portfolio.
+    </p>
+  </footer>
+
+  <script src="../script.js"></script>
+  <script src="pages.js"></script>
+  <script src="lightbox.js"></script>
+</body>
+</html>

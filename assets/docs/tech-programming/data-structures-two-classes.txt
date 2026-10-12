@@ -1,0 +1,90 @@
+import java.util.Arrays;
+public class MyArray {
+    public void printArray(int[] array, int size)
+    {
+        for(int i = 0; i < size; i++){
+            System.out.print(array[i] + " ");
+        }
+    }
+    public int searchArray(int[] array, int size, int item){
+        boolean found = false;
+        int i;
+        for( i = 0; i < size; i++){
+            if(array[i] == item){
+                found = true;
+                break;
+            }
+        }
+        if(found)
+            return i;
+        else
+            return -1;
+    }
+    public int minimum(int[] array, int size){
+        int min = array[0];
+        for(int i = 0; i < size; i++){
+            if(min > array[i]){
+                min = array[i];
+            }
+        }
+        return min;
+    }
+    public int maximum(int[] array, int size){
+        int max = array[0];
+        for(int i = 0; i < size; i++){
+            if(max < array[i]){
+                max = array[i];
+            }
+        }
+        return max;
+    }
+    public int sumArray(int[] array, int size){
+        int sum = 0;
+        for(int i = 0; i < size; i++){
+            sum = sum + array[i];
+        }
+        return sum;
+    }
+    public double averageArray(int[] array, int size){
+        double sum = 0.0, average;
+        for(int i = 0; i < size; i++){
+            sum = sum + array[i];
+        }
+        average = sum / size;
+        return average;
+    }
+    public void reverseArray(int[] array, int size){
+        for(int i = size - 1; i >= 0; i--){
+            System.out.println(array[i]);
+        }
+    }
+}
+
+
+
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+    public static void main(String[] args) {
+    int [] array = {24, 65, 42, 32, 88, 21, 11, 41, 2, 9};
+    int item =9;
+    int loc;
+    MyArray myArray = new MyArray();
+        System.out.println("Display Array");
+        myArray.printArray(array, array.length);
+        System.out.println("\nReversed Array");
+        myArray.reverseArray(array, array.length);
+        loc = myArray.searchArray(array, array.length, item);
+        if(loc < 0){
+            System.out.println("The number you are looking for is not here");
+        }
+        else{
+            System.out.println("The number you are looking for is in index " + loc);
+        }
+        System.out.println("The sum of the array is " + myArray.sumArray(array, array.length));
+        System.out.println("The average of the array is " + myArray.averageArray(array, array.length));
+        System.out.println("The smallest number is " + myArray.minimum(array, array.length));
+        System.out.println("The largest number is " + myArray.maximum(array, array.length));
+    }
+}

@@ -1,0 +1,33 @@
+public class BubbleClass {
+    public void bubbleSort(int [] array, int size){
+        for (int pass = 0; pass < size - 1; pass++){
+            for (int i = 0; i < size -1 - pass; i++){
+                if (array[i] > array[i + 1]){
+                    int temp = array[i];
+                    array[i] = array[i + 1];
+                    array[i + 1] = temp;
+                }
+            }
+        }
+    }
+    public void printArray(int [] array){
+        for (int i = 0; i < array.length; i++){
+            System.out.print(array[i] + " ");
+        }
+    }
+}
+
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+    public static void main(String[] args) {
+    BubbleClass bubbleClass = new BubbleClass();
+    int [] array = {75, 42, 89, 34, 61, 38};
+        System.out.println("Array before sorting");
+        bubbleClass.printArray(array);
+        System.out.println("\nThe sorted array");
+        bubbleClass.bubbleSort(array, array.length);
+        bubbleClass.printArray(array);
+    }
+}

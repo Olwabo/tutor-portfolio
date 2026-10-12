@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reflections &amp; Lessons Learnt | Olwabo Salelo</title>
+  <meta name="description" content="Reflections & Lessons Learnt — a reflective account of Olwabo Salelo's tutoring journey, challenges, growth and continuous improvement." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="pages.css" />
+</head>
+<body>
+  <div class="bg-orbs" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+    <span class="grid-overlay"></span>
+  </div>
+
+  <header class="navbar">
+    <a href="../index.html" class="brand" aria-label="Home">
+      <span class="brand-dot"></span>
+      <span>Olwabo<span class="accent">Salelo</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#roles">Roles</a>
+      <a href="../index.html#portfolio">Portfolio</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+       <a href="../assets/cv/Olwabo_Salelo_CV.pdf" class="btn btn-primary btn-sm" download>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          <span class="btn-label">Download CV</span>
+        </a>
+    </div>
+  </header>
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../index.html">
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 12l9-9 9 9"/>
+        <path d="M5 10v10h14V10"/>
+      </svg>
+      Home
+    </a>
+    <span class="crumb-sep">/</span>
+    <a href="technology.html">Integration of Technology</a>
+    <span class="crumb-sep">/</span>
+    <span class="crumb-current">Reflections &amp; Lessons Learnt</span>
+  </nav>
+
+  <section class="page-hero">
+    <span class="pill">
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"/>
+        <path d="M12 6v6l4 2"/>
+      </svg>
+      Portfolio Section
+    </span>
+
+    <h1>Reflections &amp; <span class="gradient-text">Lessons Learnt</span></h1>
+
+    <p class="page-lead">
+      A candid look at what worked, what was challenging, and how I grew as a tutor
+      across my time supporting Information Systems III and Technical Programming 2.
+    </p>
+
+    <div class="page-meta">
+      <span>
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 6v6l4 2"/>
+        </svg>
+        9 min read
+      </span>
+      <span>
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2 4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6l-8-4z"/>
+          <polyline points="9 12 11 14 15 10"/>
+        </svg>
+        Reflective account
+      </span>
+    </div>
+  </section>
+
+  <main class="page-layout">
+    <!-- Sticky TOC -->
+    <aside class="toc" aria-label="On this page">
+      <p class="toc-title">On this page</p>
+      <ul>
+        <li><a href="#intro" class="toc-link">Introduction</a></li>
+        <li><a href="#worked" class="toc-link">What Worked Well</a></li>
+        <li><a href="#challenges" class="toc-link">Challenges</a></li>
+        <li><a href="#handled" class="toc-link">How I Handled Them</a></li>
+        <li><a href="#learned" class="toc-link">What I Learned</a></li>
+        <li><a href="#improve" class="toc-link">What I'd Improve</a></li>
+        <li><a href="#growth" class="toc-link">Growth</a></li>
+        <li><a href="#overall" class="toc-link">Overall Reflection</a></li>
+      </ul>
+    </aside>
+
+    <article class="prose">
+
+      <section id="intro" class="prose-section">
+        <h2 class="prose-h2">
+          <span class="h2-num">01</span>
+          Introduction
+        </h2>
+
+        <p>
+          Throughout my tutoring journey, I have learned that being a tutor is not only
+          about helping students understand academic content. It is also about learning
+          how to manage responsibilities, communicate effectively, be patient, solve
+          problems, and make a positive contribution to the academic journey of others.
+        </p>
+
+        <p>
+          Tutoring Information Systems III and volunteering to assist students with
+          Technical Programming 2 gave me an opportunity to apply my knowledge while
+          developing myself both academically and professionally. Although the experience
+          came with challenges, it was also rewarding because I was able to support
+          students who needed additional assistance.
+        </p>
+
+        <figure class="pull-quote">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
+            <path d="M7.17 6A5.17 5.17 0 0 0 2 11.17V18h6.83v-6.83H5.5A1.67 1.67 0 0 1 7.17 9.5V6Zm10 0A5.17 5.17 0 0 0 12 11.17V18h6.83v-6.83H15.5A1.67 1.67 0 0 1 17.17 9.5V6Z"/>
+          </svg>
+          <blockquote>
+            Knowledge becomes more valuable when you are able to share it with others.
+          </blockquote>
+        </figure>
+      </section>
+
+      <section id="worked" class="prose-section">
+        <h2 class="prose-h2">
+          <span class="h2-num">02</span>
+          What Worked Well
+        </h2>
+
+        <p>
+          One of the most rewarding aspects of my tutoring experience was being able to
+          deliver the sessions I had planned and achieve the main objectives I had set
+          for each tutorial. I was able to explain concepts, assist students with
+          questions, conduct activities, and create opportunities for students to
+          practise what they had learned.
+        </p>
+
+        <p>
+          Using different approaches during my sessions also worked well. I used
+          PowerPoint presentations to structure my explanations, online quizzes to
+          reinforce concepts, and practical exercises to encourage students to
+          participate. When assisting with Technical Programming 2, I also used Data
+          Structures visualisation tools to demonstrate sorting algorithms. These
+          approaches helped me make technical concepts more practical and easier to
+          understand.
+        </p>
+
+        <p>
+          Another positive aspect was seeing students become more comfortable asking
+          questions. Some concepts can be difficult to understand during a formal
+          lecture, and having an additional opportunity to discuss those concepts helped
+          students clarify their understanding.
+        </p>
+
+        <p>
+          Tutoring also reinforced my own academic knowledge. When I had to explain a
+          concept to someone else, I had to make sure that I understood it properly
+          myself. In this way, tutoring became a learning experience for me as well.
+        </p>
+
+        <div class="win-grid">
+          <div class="win-card">
+            <div class="win-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+            </div>
+            <h4>Delivered as planned</h4>
+            <p>Sessions met their objectives and provided structured support.</p>
+          </div>
+
+          <div class="win-card">
+            <div class="win-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+            </div>
+            <h4>Mixed approaches</h4>
+            <p>PowerPoint, quizzes, exercises and visualisers, chosen to fit the topic.</p>
+          </div>
+
+          <div class="win-card">
+            <div class="win-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+            </div>
+            <h4>Comfortable questions</h4>
+            <p>Students grew more willing to ask for clarification during tutorials.</p>
+          </div>
+
+          <div class="win-card">
+            <div class="win-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+            </div>
+            <h4>Reinforced my own knowledge</h4>
+            <p>Explaining concepts clarified them for me as well.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="challenges" class="prose-section">
+        <h2 class="prose-h2">
+          <span class="h2-num">03</span>
+          Challenges I Experienced
+        </h2>
+
+        <p>
+          One of my biggest challenges was balancing my tutoring responsibilities with
+          my own academic workload. I had my own assignments, tests, projects, and other
+          academic responsibilities that required my attention. At the same time, I had
+          to prepare for and conduct tutorial sessions.
+        </p>
+
+        <p>
+          The workload became even greater when I agreed to assist students in Technical
+          Programming 2 after they expressed that they needed additional help,
+          particularly with Data Structures. I wanted to assist them because I had
+          knowledge of the subject and knew that I could contribute. However, taking on
+          this additional responsibility meant that I had to manage my academic work and
+          tutoring commitments at the same time.
+        </p>
+
+        <p>
+          I will not say that it was always easy. There were times when I had a lot of
+          work to complete and still had to prepare for tutoring. This experience taught
+          me that helping others is rewarding, but it also requires proper planning and
+          responsible management of my time.
+        </p>
+
+        <p>
+          Another challenge was that students did not always have the same level of
+          understanding. Some students understood a concept quickly, while others
+          required additional explanations and examples. This meant that I sometimes had
+          to change my approach during a session to make sure that students who were
+          struggling were not left behind.
+        </p>
+
+        <div class="challenge-grid">
+          <div class="challenge-card">
+            <div class="challenge-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="12" y1="8" x2="12" y2="12"/>
+                <line x1="12" y1="16" x2="12.01" y2="16"/>
+              </svg>
+            </div>
+            <h4>Balancing workloads</h4>
+            <p>Managing tutoring alongside my own studies and deadlines.</p>
+          </div>
+
+          <div class="challenge-card">
+            <div class="challenge-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="12" y1="8" x2="12" y2="12"/>
+                <line x1="12" y1="16" x2="12.01" y2="16"/>
+              </svg>
+            </div>
+            <h4>Taking on extra support</h4>
+            <p>Volunteering for Technical Programming 2 meant additional preparation.</p>
+          </div>
+
+          <div class="challenge-card">
+            <div class="challenge-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="12" y1="8" x2="12" y2="12"/>
+                <line x1="12" y1="16" x2="12.01" y2="16"/>
+              </svg>
+            </div>
+            <h4>Mixed student levels</h4>
+            <p>Adjusting explanations within the same session to reach everyone.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="handled" class="prose-section">
+        <h2 class="prose-h2">
+          <span class="h2-num">04</span>
+          How I Handled the Challenges
+        </h2>
+
+        <p>
+          The main strategy I used to manage these challenges was <strong>time
+          management</strong>. I realised that when you have multiple responsibilities,
+          you cannot simply focus on one task and hope that everything else will work
+          out. You need to plan your time and understand what needs to be completed
+          first.
+        </p>
+
+        <p>
+          I started paying closer attention to deadlines and planning my academic work
+          around my tutoring responsibilities. I allocated time for studying, completing
+          assignments, preparing tutorials, conducting sessions, and also making time for
+          my personal and social life.
+        </p>
+
+        <p>
+          I also learned to prioritise tasks according to their urgency and importance.
+          When I knew that I had a tutorial coming up, I prepared in advance rather than
+          waiting until the last minute. This reduced pressure and allowed me to focus
+          properly on the students during the session.
+        </p>
+
+        <p>
+          Most importantly, I reminded myself why I agreed to become a tutor in the first
+          place. I wanted to use the knowledge and skills I had gained to help other
+          students. Even when I was busy, I reminded myself that if I had the ability to
+          help someone understand something that I already knew, then I should try to
+          help where I could. This mindset helped me remain committed to my
+          responsibilities.
+        </p>
+
+        <p>
+          At the same time, I learned that helping others does not mean neglecting my own
+          responsibilities. I had to find a balance between supporting students and
+          making sure that my own academic progress remained a priority.
+        </p>
+
+        <div class="handling-flow">
+          <div class="handling-step">
+            <span class="handling-num">01</span>
+            <h4>Plan</h4>
+            <p>Tracked deadlines and blocked out time for study, prep and sessions.</p>
+          </div>
+          <div class="handling-step">
+            <span class="handling-num">02</span>
+            <h4>Prioritise</h4>
+            <p>Focused on what was urgent and important first.</p>
+          </div>
+          <div class="handling-step">
+            <span class="handling-num">03</span>
+            <h4>Prepare early</h4>
+            <p>Got tutorials ready in advance to reduce last-minute pressure.</p>
+          </div>
+          <div class="handling-step">
+            <span class="handling-num">04</span>
+            <h4>Remember purpose</h4>
+            <p>Stayed committed by recalling why I chose to tutor in the first place.</p>
+          </div>
+          <div class="handling-step">
+            <span class="handling-num">05</span>
+            <h4>Protect my own progress</h4>
+            <p>Helping others didn't mean neglecting my own academic work.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="learned" class="prose-section">
+        <h2 class="prose-h2">
+          <span class="h2-num">05</span>
+          What I Learned
+        </h2>
+
+        <p>
+          One of the biggest lessons I learned is that <strong>knowledge becomes more
+          valuable when you are able to share it with others</strong>. Understanding
+          something yourself is different from explaining it to someone who is struggling
+          with the same concept. Tutoring taught me to communicate knowledge in a way
+          that other people can understand.
+        </p>
+
+        <p>
+          I also learned the importance of patience. Students learn at different speeds,
+          and a tutor needs to understand that asking the same question more than once
+          does not mean that a student is not capable. Sometimes a student simply needs
+          the concept explained differently.
+        </p>
+
+        <p>
+          Another important lesson was that <strong>time management is essential</strong>.
+          Balancing my own studies, tutoring, personal responsibilities, and social life
+          taught me how important it is to plan ahead and use my time effectively.
+        </p>
+
+        <p>
+          I also developed greater confidence in speaking to groups and explaining
+          technical concepts. Before tutoring, I was more focused on understanding
+          concepts for my own academic work. Through tutoring, I had to think about how
+          another person would understand those concepts. This improved my communication
+          and presentation skills.
+        </p>
+
+        <p>
+          The experience also strengthened my leadership skills. I learned that
+          leadership is not always about being the person in charge. Sometimes leadership
+          means being available to help someone, sharing knowledge, listening to their
+          problems, and guiding them towards finding their own solutions.
+        </p>
+
+        <div class="lesson-grid">
+          <div class="lesson-card">
+            <div class="lesson-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2 4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6l-8-4z"/>
+                <polyline points="9 12 11 14 15 10"/>
+              </svg>
+            </div>
+            <h4>Sharing knowledge</h4>
+            <p>Teaching someone else forces clearer, more careful understanding.</p>
+          </div>
+
+          <div class="lesson-card">
+            <div class="lesson-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </div>
+            <h4>Patience</h4>
+            <p>Students learn at different rates; repeated questions are normal.</p>
+          </div>
+
+          <div class="lesson-card">
+            <div class="lesson-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <h4>Time management</h4>
+            <p>Planning ahead kept tutoring and study from competing.</p>
+          </div>
+
+          <div class="lesson-card">
+            <div class="lesson-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              </svg>
+            </div>
+            <h4>Communication</h4>
+            <p>Greater confidence presenting and explaining technical concepts.</p>
+          </div>
+
+          <div class="lesson-card">
+            <div class="lesson-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+              </svg>
+            </div>
+            <h4>Leadership</h4>
+            <p>Being available to help and guiding others to their own answers.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="improve" class="prose-section">
+        <h2 class="prose-h2">
+          <span class="h2-num">06</span>
+          What I Would Improve
+        </h2>
+
+        <p>
+          Although I am satisfied with my tutoring experience, there are several areas I
+          would improve in future tutoring sessions.
+        </p>
+
+        <div class="improve-list">
+          <div class="improve-item">
+            <div class="improve-num">01</div>
+            <div class="improve-body">
+              <h3>Time allocation during tutorials</h3>
+              <p>
+                I would make sure that each activity has a clearly defined amount of time
+                so that I can cover the important learning objectives without rushing at
+                the end of the session.
+              </p>
+            </div>
+          </div>
+
+          <div class="improve-item">
+            <div class="improve-num">02</div>
+            <div class="improve-body">
+              <h3>Greater use of student feedback</h3>
+              <p>
+                Although I could identify some difficulties through questions and
+                participation, collecting structured feedback would help me understand
+                what students found useful and what could be improved.
+              </p>
+            </div>
+          </div>
+
+          <div class="improve-item">
+            <div class="improve-num">03</div>
+            <div class="improve-body">
+              <h3>Wider range of activities</h3>
+              <p>
+                I would prepare basic exercises for students who need more practice and
+                more challenging problems for students who are already comfortable with
+                the topic.
+              </p>
+            </div>
+          </div>
+
+          <div class="improve-item">
+            <div class="improve-num">04</div>
+            <div class="improve-body">
+              <h3>Balancing additional tutoring requests</h3>
+              <p>
+                I am willing to help students whenever I can, but I have learned that I
+                also need to consider my available time and academic responsibilities
+                before taking on additional commitments.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="growth" class="prose-section">
+        <h2 class="prose-h2">
+          <span class="h2-num">07</span>
+          My Growth Throughout the Tutoring Period
+        </h2>
+
+        <p>
+          Looking back at the beginning of my tutoring journey, I can see growth in both
+          my confidence and my ability to work with students.
+        </p>
+
+        <p>
+          I have become more comfortable presenting information, answering questions,
+          managing tutorial sessions, and adapting my explanations when students do not
+          immediately understand a concept. I have also become more aware of the
+          importance of preparation and planning.
+        </p>
+
+        <p>
+          Tutoring has strengthened skills that are directly relevant to my future
+          career as an Applications Developer. Communication, teamwork, problem-solving,
+          time management, leadership, adaptability, and the ability to understand users'
+          needs are all important in software development.
+        </p>
+
+        <p>
+          Most importantly, this experience has taught me that being successful is not
+          only about achieving my own goals. It is also about being able to contribute to
+          the success of others. Helping students understand concepts that they initially
+          found difficult gave me a sense of purpose and reminded me of the value of
+          sharing knowledge.
+        </p>
+
+        <div class="skill-bars">
+          <div class="skill-bar">
+            <div class="skill-bar-head">
+              <span>Communication</span>
+              <span class="skill-bar-value">Improved</span>
+            </div>
+            <div class="skill-bar-track"><span style="width: 92%"></span></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-head">
+              <span>Time management</span>
+              <span class="skill-bar-value">Improved</span>
+            </div>
+            <div class="skill-bar-track"><span style="width: 88%"></span></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-head">
+              <span>Leadership</span>
+              <span class="skill-bar-value">Improved</span>
+            </div>
+            <div class="skill-bar-track"><span style="width: 85%"></span></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-head">
+              <span>Patience</span>
+              <span class="skill-bar-value">Improved</span>
+            </div>
+            <div class="skill-bar-track"><span style="width: 90%"></span></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-head">
+              <span>Problem-solving</span>
+              <span class="skill-bar-value">Improved</span>
+            </div>
+            <div class="skill-bar-track"><span style="width: 87%"></span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="overall" class="prose-section">
+        <h2 class="prose-h2">
+          <span class="h2-num">08</span>
+          Overall Reflection
+        </h2>
+
+        <p>
+          Overall, my tutoring experience has been challenging, rewarding, and valuable.
+          There were moments when balancing my academic responsibilities with tutoring
+          was difficult, especially after taking on additional support for Technical
+          Programming 2. However, the experience taught me how to manage my time, remain
+          committed to my responsibilities, and continue helping others even when things
+          became demanding.
+        </p>
+
+        <div class="closing-note">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2 4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6l-8-4z"/>
+            <polyline points="9 12 11 14 15 10"/>
+          </svg>
+          <p>
+            I leave this tutoring experience with greater confidence, stronger
+            communication and leadership skills, and a better understanding of what it
+            means to support other students. I believe these lessons will continue to
+            benefit me throughout my academic journey and in my future career as an
+            Applications Developer.
+          </p>
+        </div>
+      </section>
+
+      <nav class="page-nav" aria-label="Portfolio navigation">
+        <a href="technology.html" class="page-nav-link page-nav-prev">
+          <span class="page-nav-dir">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12"/>
+              <polyline points="12 19 5 12 12 5"/>
+            </svg>
+            Previous
+          </span>
+          <strong>Integration of Technology</strong>
+        </a>
+        <a href="gallery.html" class="page-nav-link page-nav-next">
+          <span class="page-nav-dir">
+            Next
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </span>
+          <strong>Gallery / Evidence</strong>
+        </a>
+      </nav>
+    </article>
+  </main>
+
+    <footer id="contact" class="footer">
+    <div class="footer-inner">
+      <div>
+        <h3>Let's connect</h3>
+        <p>Open to feedback, collaboration and tutoring opportunities.</p>
+      </div>
+      <div class="footer-links">
+        <a href="saleloolwabo99@gmail.com">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16v16H4z"/>
+            <polyline points="4 6 12 13 20 6"/>
+          </svg>
+          Email
+        </a>
+        <a href="www.linkedin.com/in/olwabo-salelo-0a4a72297" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
+            <rect x="2" y="9" width="4" height="12"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/Olwabo?tab=repositories" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+          </svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+    <p class="copyright">
+           &copy; <span id="year"></span> Olwabo Salelo · Tutor E-Portfolio.
+    </p>
+  </footer>
+
+  <script src="../script.js"></script>
+  <script src="pages.js"></script>
+</body>
+</html>
